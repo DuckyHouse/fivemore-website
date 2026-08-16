@@ -2,7 +2,11 @@
 	"$schema": "./node_modules/wrangler/config-schema.json",
 	"compatibility_date": "2026-08-15",
 	"name": "fivemore-landing",
-	"main": "src/index.ts",
+	"assets": {
+		"directory": "./public",
+		"html_handling": "auto-trailing-slash",
+		"not_found_handling": "none"
+	},
 	"routes": [
 		{
 			"pattern": "fivemore.duckyhouse.dev",
