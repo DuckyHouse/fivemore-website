@@ -1,0 +1,15 @@
+{
+	"$schema": "./node_modules/wrangler/config-schema.json",
+	"compatibility_date": "2026-08-15",
+	"name": "fivemore-landing",
+	"main": "src/index.ts",
+	"routes": [
+		{
+			"pattern": "fivemore.duckyhouse.dev",
+			"custom_domain": true
+		}
+	],
+	"observability": {
+		"enabled": true
+	}
+}
